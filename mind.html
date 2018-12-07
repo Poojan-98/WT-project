@@ -157,7 +157,210 @@
         </section>
     </div>
     <script type="text/javascript">
+        function po<HTML>
+<HEAD>
+    <TITLE>Main</TITLE>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--    google font-->
+    <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet"> 
+    <style type="text/css">
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .main{
+            width:100%;
+            height:100%;
+            background-color: #F1C2D6;
+            background: cover;
+            display:flex;
+            flex-direction: column;
+        }
+    /*    header part*/
+        header{
+            width:100%;
+            display:flex;
+            justify-content: space-between;
+            height:20%;
+            
+
+        }
+        header img{
+            width:100px;
+            height: 100px;
+            align-items: left;
+        }
+        nav ul{
+            align-items: right;
+            display:flex;
+            margin-top:20px;
+
+        }
+        nav ul li{
+            display:flex;
+            padding-top:15px;
+            margin-right: 20px;
+            
+        }
+        nav ul li a{
+            padding:6px;
+            color:white;
+            text-decoration: none;
+            font-family: 'Flamenco', cursive;
+            text-transform: uppercase;
+            font-weight: 100px;
+            transition: background-color 0.2s,border 0.2s, color 0.2s;
+        }
+        nav ul li a:hover{
+            background:#F285B4;
+            border-radius: 50%;
+            border-bottom:1px solid white;
+            cursor: pointer;
+        }
+        @media screen and (min-width: 640px){
+            
+            nav ul li a{
+                padding:25px;
+                font-size:25px;
+            }
+           
+        }
+        @media screen and (min-width: 569px){
+            nav ul li a{
+                padding:15px;
+                font-size:25px;
+            }
+        }
+        @media screen and (min-width:925px){
+            nav ul li a{
+            font-size:32px;
+            }
+    
+        }
+       /* End of header part*/
+       
+        section{
+            border: 1px solid black;
+            width:100%;
+            height:100%;
+            position:relative;
+        
+        }
+       .box,input[type="text"]{
+        border:1px solid black;
+        background-color:#eee;
+        width:100px;
+        height:100px;
+        position:absolute;
+       /* border-radius: 50px;*/
+        
+
+    }
+    input[type="text"]{
+        text-align: center;
+    }
+    .line{
+        width:1px;
+        height:50px;
+        background-color:black;
+        position:absolute;
+    }
+    #window{
+        top:50%;
+        left:50%;
+    }
+    #line1{
+        top:220px;
+        left:334px;
+    }
+    #window1{
+        top:120px;
+        left:285px;
+
+    }
+    #line2{
+        left:265px;
+        top:290px;
+        transform: rotate(90deg);
+    }
+    #window2{
+        top:270px;
+        left:140px;
+    }
+    #line3{
+        left:265px;
+        top:100px;
+        transform: rotate(90deg);
+    }
+    #window3{
+        top:0px;
+        left:0px;
+    }
+    
+   
+    </style>
+</HEAD>
+<body>
+    <div class="main">
+        <header>
+           
+            <img src="IMG/Logo.png" alt="Mind map logo" class="logo">
+            <nav>
+               <ul>
+                  <li><a href="HOME.HTML">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="creators.html">Creators</a></li>
+               </ul>
+
+            </nav>
+             
+        </header>
+        <section>
+                      <h1>this page will update soon</h1>
+            <div id="window" class="box">
+                <input type="text" placeholder="text" ondblclick="link()" onmouseover="document.getElementById('hint').innerHTML='Hint:double-click=Open Link'" onmouseout="document.getElementById('hint').style.display = 'none';">
+        
+        <!-- <div id="plus" onclick="pop-out()">+</div> -->
+             </div>
+            <div id="window1" class="box"> 
+                <input type="text" placeholder="text" ondblclick="link()" onmouseover="document.getElementById('hint').innerHTML='Hint:double-click=Open Link'" onmouseout="document.getElementById('hint').style.display = 'none';">
+            </div> 
+            <div id="window2" class="box"> 
+                <input type="text" placeholder="text" ondblclick="link()" onmouseover="document.getElementById('hint').innerHTML='Hint:double-click=Open Link'" onmouseout="document.getElementById('hint').style.display = 'none';">
+            
+            <div id="window3" class="box"> 
+                <input type="text" placeholder="text" ondblclick="link()" onmouseover="document.getElementById('hint').innerHTML='Hint:double-click=Open Link'" onmouseout="document.getElementById('hint').style.display = 'none';">
+            </div>
+            
+            <div id="window4" class="box"> 
+                <input type="text" placeholder="text" ondblclick="link()" onmouseover="document.getElementById('hint').innerHTML='Hint:double-click=Open Link'" onmouseout="document.getElementById('hint').style.display = 'none';">
+            </div>
+            <div class="line" id="line1"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
+            <div class="line" id="line4"></div>
+
+           
+
+
+     
+              
+        </section>
+    </div>
+    <script type="text/javascript">
         function pop_out(){
+            document.getElementById("window").style.display="block";
+        }
+        
+     
+    </script>
+</body>
+</HTML>
+p_out(){
             document.getElementById("window").style.display="block";
         }
         
